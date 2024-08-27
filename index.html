@@ -1,21 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aoling TANG's Personal Website</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #00a2a2;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            background: url('background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            margin: 80px 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            text-align: center;
+            color: #00a2a2;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .education-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .education-item {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .education-item h3 {
+            color: #00a2a2;
+            font-size: 1.5em;
+        }
+
+        .education-item p {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #00a2a2;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
+
     <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research Experience</a></li>
             <li><a href="#papers">Published Papers</a></li>
             <li><a href="#awards">Awards</a></li>
             <li><a href="#more">More About Me</a></li>
@@ -24,19 +125,15 @@
 
     <!-- Header Section -->
     <header>
-        <div class="header-content">
-            <h1>Aoling TANG</h1>
-            <p>Your tagline or short introduction</p>
-            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
-        </div>
+        <h1>Aoling TANG</h1>
+        <p>“浮舟沧海 立马昆仑” – Sailing across the vast sea standing tall on the Kunlun Mountains</p>
+        <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
     </header>
 
     <!-- About Me Section -->
     <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-        <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+        <p>Hi! My name is Aoling TANG, a postgraduate student majoring in Economics at Beihang University, China. I’m very happy to meet you here! My research interests include innovation, environmental sustainability, organizations, corporate governance, and corporate social responsibility.</p>
     </section>
 
     <!-- Education Section -->
@@ -44,16 +141,42 @@
         <h2>Education</h2>
         <div class="education-details">
             <div class="education-item">
-                <h3>Master of Science in Computer Science</h3>
-                <p>University Name</p>
-                <p>2018 - 2020</p>
-                <p>Studied topics including advanced algorithms, machine learning, and software engineering. Completed a thesis on the application of deep learning in natural language processing.</p>
+                <h3>Beihang University, CHINA</h3>
+                <p><strong>Master in Economics</strong> (09/2023 - Present)</p>
+                <p>GPA: 3.86/4.0</p>
+                <p>Main Courses: Advanced Microeconomics (97), Advanced Macroeconomics (98)</p>
+                <p>IELTS: 7, GRE: 324</p>
             </div>
             <div class="education-item">
-                <h3>Bachelor of Science in Information Technology</h3>
-                <p>University Name</p>
-                <p>2014 - 2018</p>
-                <p>Focused on software development, database management, and computer networks. Graduated with honors.</p>
+                <h3>Beihang University, CHINA</h3>
+                <p><strong>Bachelor of Economics</strong> (09/2019 - 06/2023)</p>
+                <p>GPA: 3.82/4.0</p>
+                <p>Average Score: 91</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Experience Section -->
+    <section id="research" class="content-section">
+        <h2>Research Experience</h2>
+        <div class="education-details">
+            <div class="education-item">
+                <p><strong>2021-2022</strong> - Beijing Social Science Fund Decision Consulting Key Project “Research on the Radiation Power of Beijing National Science and Technology Innovation Center”. Accomplished an essay and assisted the members in the research group in completing their papers.</p>
+            </div>
+            <div class="education-item">
+                <p><strong>2021-2022</strong> - Planning Key Project “Research on the Construction of Beijing International Science and Technology Innovation Center from the Perspective of Innovation Ecology”. Discussed the impact of the heterogeneity of corporate executives on innovation and enterprise credit rating. Accomplished a report and assisted the members in collecting data.</p>
+            </div>
+            <div class="education-item">
+                <p><strong>2021</strong> - Shenzhen Science and Technology Plan Project 2021 Soft Science Project “Research on Shenzhen Technology Transfer System and Mechanism in the New Era”. Wrote the concluding report and assisted the members in collecting data.</p>
+            </div>
+            <div class="education-item">
+                <p><strong>2023</strong> - Textbook on Financial Technology. Wrote the basic knowledge of financial technology including the concept, system composition, related policies, etc.</p>
+            </div>
+            <div class="education-item">
+                <p><strong>2023-2024</strong> - Monograph on Regional Innovation Ecosystem. Wrote four of the nine chapters including evaluation of suitability, maturity, and health of regional innovation ecosystem, comparative analysis of city dimensions, and the impact of the business environment.</p>
+            </div>
+            <div class="education-item">
+                <p><strong>2024</strong> - Taking charge of a soft subject of the Ministry of Industry and Information Technology “Evaluation of the effect of policies to support the development of small and medium-sized enterprises and suggestions for optimization and improvement”.</p>
             </div>
         </div>
     </section>
@@ -61,60 +184,40 @@
     <!-- Published Papers Section -->
     <section id="papers" class="content-section">
         <h2>Published Papers</h2>
-        <div class="education-details">
-            <div class="education-item">
-                <h3>Title of Paper One</h3>
-                <p>Journal Name</p>
-                <p>2021</p>
-                <p>This paper explores the use of machine learning algorithms in predicting stock market trends with a high degree of accuracy.</p>
-            </div>
-            <div class="education-item">
-                <h3>Title of Paper Two</h3>
-                <p>Conference Name</p>
-                <p>2019</p>
-                <p>This study presents a novel approach to natural language processing using recurrent neural networks and attention mechanisms.</p>
-            </div>
-        </div>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1mSZXs6TpGcA7P0VDK5ku_mhQSi_j5B4r/view?usp=share_link" target="_blank">The impact of integration of industry and finance on green total factor productivity of enterprises</a></li>
+            <li><a href="https://drive.google.com/file/d/177Lqlb35UdxbgcnCZy0UkPLXpP8QultB/view?usp=share_link" target="_blank">Comparative Study on Technology Transfer Efficiency of Beijing, Shanghai, and Shenzhen Based on DEA Model</a></li>
+            <li><a href="https://drive.google.com/file/d/1cwVs1mOKtEwmkfY5KSamilT-6TifY_r1/view?usp=share_link" target="_blank">How does the integration of finance and industry affect green total factor productivity? A Micro-Exploration from China's Listed Firms</a></li>
+            <li><a href="https://drive.google.com/file/d/1Kn9SCLSly_3gR2pBTl10C89Zb8ywjDDP/view?usp=share_link" target="_blank">Research on the Impact of Institutional Discourse Power on Standard Internationalization</a></li>
+        </ul>
     </section>
 
-    <!-- Awards Section -->
+       <!-- Awards Section -->
     <section id="awards" class="content-section">
         <h2>Awards</h2>
-        <div class="education-details">
-            <div class="education-item">
-                <h3>Best Paper Award</h3>
-                <p>Conference Name</p>
-                <p>2020</p>
-                <p>Received for outstanding research in the field of artificial intelligence and machine learning.</p>
-            </div>
-            <div class="education-item">
-                <h3>Dean's List</h3>
-                <p>University Name</p>
-                <p>2016 - 2018</p>
-                <p>Recognized for academic excellence during undergraduate studies.</p>
-            </div>
-        </div>
+        <ul>
+            <li><strong>2020:</strong> Scholarship of Academic Excellence</li>
+            <li><strong>2021:</strong> Scholarship of Academic Excellence</li>
+            <li><strong>2021:</strong> Scholarship of Social Practice</li>
+            <li><strong>2022:</strong> Scholarship of Academic Excellence</li>
+            <li><strong>2023:</strong> Outstanding Graduate</li>
+            <li><strong>2023:</strong> Freshman Scholarship (Top 4%)</li>
+        </ul>
     </section>
 
     <!-- More About Me Section -->
     <section id="more" class="content-section">
         <h2>More About Me</h2>
-        <div class="education-details">
-            <div class="education-item">
-                <h3>Hobbies and Interests</h3>
-                <p>I enjoy hiking, photography, and exploring new technologies. I'm also passionate about volunteering in tech education initiatives.</p>
-            </div>
-            <div class="education-item">
-                <h3>Volunteer Experience</h3>
-                <p>Volunteered with local organizations to teach coding and computer skills to underprivileged youth, helping them build a foundation for future success.</p>
-            </div>
-        </div>
+        <p><strong>Strong analytical skills and Research proficiency:</strong> I have gained extensive experience in conducting rigorous research and have developed advanced quantitative and analytical abilities. This enables me to contribute valuable insights to any research project or policy analysis.</p>
+        <p><strong>Creative thinking:</strong> During my undergraduate stage, while many students tend to rely on their tutors for selecting research titles, I always come up with new ideas when reading literature. I actively discuss these ideas with my supervisor to determine if they are worth researching further.</p>
+        <p><strong>Teamwork:</strong> I possess excellent teamwork capabilities. For example, during research class, I often assist other classmates by collecting data or discussing their confusion.</p>
+        <p><strong>Persistence:</strong> The most important quality that I possess is persistence. I can accept failure and continue working on a problem until I solve it. I am not a very smart student, but I am a hard-working, self-driven, and persistent student.</p>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Aoling TANG. All rights reserved.</p>
+        <p>&copy; 2024 Aoling TANG | All Rights Reserved</p>
     </footer>
-</body>
 
+</body>
 </html>
