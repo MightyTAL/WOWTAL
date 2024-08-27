@@ -5,110 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aoling TANG's Personal Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lora', serif;
-            color: #333;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background-color: #00a2a2;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        nav ul li {
-            margin: 0;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        header {
-            background: url('background.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 150px 20px;
-        }
-
-        .profile-photo {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-top: 20px;
-        }
-
-        .content-section {
-            padding: 60px 20px;
-            margin: 80px 0;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .content-section h2 {
-            text-align: center;
-            color: #00a2a2;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .education-details {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .education-item {
-            background-color: #f0f0f0;
-            padding: 15px;
-            border-radius: 10px;
-        }
-
-        .education-item h3 {
-            color: #00a2a2;
-            font-size: 1.5em;
-        }
-
-        .education-item p {
-            margin: 5px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #00a2a2;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <!-- Navigation Bar -->
@@ -116,8 +14,8 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research Experience</a></li>
-            <li><a href="#papers">Published Papers</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#papers">Papers</a></li>
             <li><a href="#awards">Awards</a></li>
             <li><a href="#more">More About Me</a></li>
         </ul>
@@ -125,9 +23,12 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Aoling TANG</h1>
-        <p>“浮舟沧海 立马昆仑” – Sailing across the vast sea standing tall on the Kunlun Mountains</p>
-        <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+        <img src="background-photo.jpg" alt="Background Photo" class="background-photo">
+        <div class="header-content">
+            <h1>Aoling TANG</h1>
+            <p>“浮舟沧海 立马昆仑” – Sailing across the vast sea standing tall on the Kunlun Mountains</p>
+            <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+        </div>
     </header>
 
     <!-- About Me Section -->
@@ -192,7 +93,7 @@
         </ul>
     </section>
 
-       <!-- Awards Section -->
+    <!-- Awards Section -->
     <section id="awards" class="content-section">
         <h2>Awards</h2>
         <ul>
